@@ -1,2 +1,2 @@
-# Veebilehe-r-hmaprojekt
+# Veebilehe-projekt
 Veebilehe-rühmaprojekt
