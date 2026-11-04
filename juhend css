@@ -1,0 +1,44 @@
+1. Foundations (global setup)
+
+CSS variables (:root): your color palette, fonts, spacing sizes, and border radius, defined once and reused everywhere. 
+This is the heart of your brand guidelines.
+Reset / box-sizing: * { box-sizing: border-box; margin: 0; } so sizing behaves predictably.
+html and body: base font, font size, line height, background color, text color.
+
+2. Typography
+
+Headings (h1 to h6): font, size scale, weight, color, spacing
+Paragraphs (p): line height, max width for readability
+Links (a): normal, :hover, :focus, :visited states
+Lists (ul, ol, li): bullets, spacing, indentation
+Text details: strong, em, blockquote, small
+
+3. Page structure (layout)
+
+header: logo/title area
+nav: menu links, active page highlight, hover effects
+main: content wrapper with max-width and centering
+section / article: spacing between content blocks
+footer: copyright, links, contact info
+Container class: a reusable centered wrapper (e.g. .container)
+Grid / Flexbox: for arranging columns, rows, and card layouts
+
+4. Components (reusable pieces)
+
+Buttons (button, .btn): default, hover, active, disabled
+Cards (.card): background, padding, shadow, border radius. Perfect for team member profiles on an about page
+Images (img): max-width: 100%, rounded corners, object-fit for profile photos
+Forms (input, textarea, label, select): if you have a contact form
+Tables (table, th, td): only if needed
+Hero / banner section: big intro area at the top of the page
+
+5. Responsiveness
+
+Media queries (@media): adjusting layout for tablet and mobile (e.g. stacking columns, collapsing the nav)
+Viewport meta tag (in the HTML, not CSS, but required for this to work)
+
+6. Brand guideline extras
+
+Utility classes: .text-center, .bg-primary, .text-accent, etc.
+Spacing scale: consistent values like 8px, 16px, 24px, 32px
+Accessibility: visible :focus outlines and enough color contrast between text and background

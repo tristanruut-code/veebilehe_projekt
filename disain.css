@@ -1,0 +1,137 @@
+:root{
+    --värv-algne: #3a595c;
+    --värv-algne-tume: #192e2f;
+    --värv-teine: #bcd9d7;
+    --värv-aksent: #7ba9a9;
+    --värv-aktsent2: #435f4b;
+    --värv-esiletõstev: #f1d8a0;
+
+    --värv-taust: #edeef0;
+    --värv-pind: #f8f9fa;
+    --värv-tekst: #181d1d;
+    --värv-tekst-summutatud: #4b5557;
+    --värv-tumedal-taustal: #f8f9fa;
+    --värv-tume-taust: #343a40;
+
+    /*erinevad kirjatüübid*/
+    --font-põhi: "Arial", system-ui, sans-serif;
+    --tekst-suurus: 1rem;
+    --joon-kõrgus: 1.5;
+
+    /*suurused*/
+    --suurus-1: 0.25rem;
+    --suurus-2: 0.5rem;
+    --suurus-3: 1rem;
+    --suurus-4: 1.5rem;
+    --suurus-5: 2rem;
+    --suurus-6: 4rem;
+
+    /*kujundus ja efektid*/
+    --ümardatud-nurk: 12px;
+    --vari: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --üleminek: 0.3s ease;
+
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: var(--font-põhi);
+    font-size: var(--tekst-suurus);
+    line-height: var(--joon-kõrgus);
+    color: var(--värv-tekst);
+    background-color: var(--värv-taust);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--ümardatud-nurk);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--värv-tekst);
+    /*proovisin mitme erineva värviga ning läks suht kirjuks, pigem samaga*/
+    margin-bottom: var(--suurus-3);
+}
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+p{
+    margin-bottom: var(--suurus-3);
+}
+
+a{
+    color: var(--värv-põhi);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--üleminek);
+}
+
+a:hover{
+    color: var(--värv-aktsent2);
+}
+
+ul, ol{
+    margin-bottom: var(--suurus-3);
+    padding-left: var(--suurus-4);
+}
+
+li{
+    margin-bottom: var(--suurus-2);
+}
+
+header{
+    background-color: var(--värv-pind);
+    padding: var(--suurus-3);
+    box-shadow: var(--vari);
+}
+
+nav{
+    background-color: var(--värv-tume-taust);
+    padding: var(--suurus-3);
+    box-shadow: var(--vari);
+}
+
+nav a{
+    color: var(--värv-tumedal-taustal);
+}
+
+nav a:hover{
+    color: var(--värv-teine);
+}
+
+main{
+    padding: var(--suurus-5);
+}
+
+section, article{
+    margin-bottom: var(--suurus-5);
+}
+
+footer{
+    background-color: var(--värv-tume-taust);
+    padding: var(--suurus-3);
+    color: var(--värv-tumedal-taustal);
+    text-align: center;
+}
+
+
+
