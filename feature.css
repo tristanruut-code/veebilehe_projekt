@@ -135,8 +135,6 @@ footer {
   color: var(--light-color);
   padding: 1rem;
   text-align: center;
-  --copyright: 2024 Your Company. All rights reserved.
-
 }
 
 grid {
