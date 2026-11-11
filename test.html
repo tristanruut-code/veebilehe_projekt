@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport tag: needed for media queries to work on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us – CSS Test Page</title>
+
+  <!-- Your separate stylesheet. Create style.css in the same folder as this file. -->
+  <link rel="stylesheet" href="feature.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER + NAV ===================== -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">Team Name</a>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="active">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO / BANNER ===================== -->
+    <section class="hero">
+      <div class="container">
+        <h1>About Our Group</h1>
+        <p>A short, friendly introduction to who we are and what we are building together.</p>
+        <a href="#" class="btn">Meet the team</a>
+        <button>Secondary button</button>
+      </div>
+    </section>
+
+    <!-- ===================== TYPOGRAPHY ===================== -->
+    <section>
+      <div class="container">
+        <h2>Typography</h2>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <p>
+          This is a normal paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+
+        <p>
+          This paragraph has <strong>strong (bold) text</strong>, <em>emphasized (italic) text</em>,
+          <small>small text</small>, and a <a href="#">regular link</a>. Here is also a
+          <a href="https://example.com">link you have probably visited</a> to test the visited state.
+        </p>
+
+        <blockquote>
+          “This is a blockquote. Great for a mission statement or a favorite quote from the team.”
+        </blockquote>
+
+        <h3>Unordered list</h3>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item
+            <ul>
+              <li>Nested item</li>
+              <li>Another nested item</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <ol>
+          <li>Step one</li>
+          <li>Step two</li>
+          <li>Step three</li>
+        </ol>
+
+        <hr>
+      </div>
+    </section>
+
+    <!-- ===================== ARTICLE / TEXT SECTION ===================== -->
+    <section>
+      <div class="container">
+        <article>
+          <h2>Our Story</h2>
+          <p>
+            Article content goes here. This block tests spacing between sections and how your
+            paragraphs look inside an article element. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+          </p>
+          <img src="https://placehold.co/800x400" alt="Placeholder banner image">
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CARDS (TEAM MEMBERS) ===================== -->
+    <section>
+      <div class="container">
+        <h2>Meet the Team</h2>
+
+        <!-- Wrap cards in a grid or flexbox container -->
+        <div class="card-grid">
+
+          <div class="card">
+            <img src="https://placehold.co/300x300" alt="Team member 1">
+            <h3>Member One</h3>
+            <p>Role / title</p>
+            <p>A short bio about this team member goes here.</p>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+          <div class="card">
+            <img src="https://placehold.co/300x300" alt="Team member 2">
+            <h3>Member Two</h3>
+            <p>Role / title</p>
+            <p>A short bio about this team member goes here.</p>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+          <div class="card">
+            <img src="https://placehold.co/300x300" alt="Team member 3">
+            <h3>Member Three</h3>
+            <p>Role / title</p>
+            <p>A short bio about this team member goes here.</p>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+          <div class="card">
+            <img src="https://placehold.co/300x300" alt="Team member 4">
+            <h3>Member Four</h3>
+            <p>Role / title</p>
+            <p>A short bio about this team member goes here.</p>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BUTTONS (ALL STATES) ===================== -->
+    <section>
+      <div class="container">
+        <h2>Buttons</h2>
+        <button>Default button</button>
+        <button class="btn">.btn button</button>
+        <a href="#" class="btn">.btn link</a>
+        <button disabled>Disabled button</button>
+      </div>
+    </section>
+
+    <!-- ===================== TABLE ===================== -->
+    <section>
+      <div class="container">
+        <h2>Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Responsibility</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Member One</td>
+              <td>Designer</td>
+              <td>Brand guidelines, About page</td>
+            </tr>
+            <tr>
+              <td>Member Two</td>
+              <td>Developer</td>
+              <td>Home page</td>
+            </tr>
+            <tr>
+              <td>Member Three</td>
+              <td>Writer</td>
+              <td>Content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== FORM ===================== -->
+    <section>
+      <div class="container">
+        <h2>Contact Form</h2>
+        <form action="#">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+
+          <label for="topic">Topic</label>
+          <select id="topic">
+            <option>General question</option>
+            <option>Feedback</option>
+            <option>Collaboration</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+
+          <label>
+            <input type="checkbox"> Subscribe to updates
+          </label>
+
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Team Name. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
