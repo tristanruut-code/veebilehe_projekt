@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Otsingutulemused</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Õppejõudude otsing</h2>
+    </header>
+
+    <main>
+
+        <h1>Otsingutulemused</h1>
+
+        <p>
+            Otsing: {{ query if query else "Kõik õppejõud" }}
+        </p>
+
+        {% if teachers %}
+
+            <p>Leiti {{ teachers|length }} õppejõudu.</p>
+
+            {% for teacher in teachers %}
+
+                <div>
+
+                    <h3>{{ teacher.nimi }}</h3>
+
+                    <p>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:{{ teacher.email }}">
+                            {{ teacher.email }}
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>Teaduskond:</strong>
+                        {{ teacher.teaduskond }}
+                    </p>
+
+                    <p>
+                        <strong>Õppeaine:</strong>
+                        {{ teacher.aine }}
+                    </p>
+
+                    <p>
+                        <strong>Märksõnad:</strong>
+                        {{ teacher.marksonad }}
+                    </p>
+
+                    <hr>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p>Sobivaid õppejõude ei leitud.</p>
+
+        {% endif %}
+
+        <p>
+            <a href="/">Tagasi otsingusse</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Õppejõudude kontaktide otsingusüsteem</p>
+    </footer>
+
+</body>
+</html>

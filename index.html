@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Õppejõudude otsing</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Õppejõudude otsing</h2>
+    </header>
+
+    <main>
+
+        <h1>Leia õppejõu kontaktandmed</h1>
+
+        <p>
+            Otsi õppejõudu nime, õppeaine või märksõnade järgi.
+        </p>
+
+        <form action="/search" method="GET">
+
+            <p>
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Sisesta nimi või märksõna..."
+                >
+            </p>
+
+            <p>
+                <select name="faculty">
+                    <option value="">Kõik teaduskonnad</option>
+                    <option value="IT">IT</option>
+                    <option value="Majandus">Majandus</option>
+                    <option value="Humanitaarteadused">Humanitaarteadused</option>
+                    <option value="Tehnika">Tehnika</option>
+                </select>
+            </p>
+
+            <button type="submit">Otsi</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Õppejõudude kontaktide otsingusüsteem</p>
+    </footer>
+
+</body>
+</html>
