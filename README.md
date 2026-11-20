@@ -11,3 +11,15 @@ Commitid ja pushimine: Töötate oma harus, teete regulaarseid ja selgeid commit
 Pull Request (PR) ja Merge: Kui funktsioon on valmis, teete GitHubis Pull Requesti main harusse. Teised tiimiliikmed saavad koodi üle vaadata ja seejärel vajutate Merge.
 
 Viimane samm: Enne esitamist veenduge, et kõik harud on edukalt main harusse kokku viidud ja kood on seal täiesti korras!
+
+# Rühmatöö käitumisnormid
+Oleme leppinud kokku, et jätkata samade käitumisnormidega, milleks on:
+Rühmaliige ...
+
+On kohal rühma kohtumistel.
+Teeb oma osa tööst.
+Saab oma ülesannetega kokku lepitud ajaks valmis.
+On kursis tehtud tööde ja tähtaegadega.
+On avatud tagasisidele ja parandusettepanekutele.
+Pakub välja häid ideid ja lahendusi.
+Aitab kaasa õiglasele tööjaotusele
