@@ -5,50 +5,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Õppejõudude otsing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feature.css">
 </head>
 
 <body>
 
     <header>
-        <h2>Õppejõudude otsing</h2>
+        <div class="container header-inner">
+            <a class="logo" href="index.html">KAHAS</a>
+            <nav>
+                <a href="index.html">Kodu</a>
+                <a href="about_page.html">Meist</a>
+                <a href="contact_page.html">Kontakt</a>
+            </nav>
+        </div>
     </header>
 
+
     <main>
-
-        <h1>Leia õppejõu kontaktandmed</h1>
-
-        <p>
-            Otsi õppejõudu nime, õppeaine või märksõnade järgi.
-        </p>
-
-        <form action="/search" method="GET">
+        <section class="container">
+            <h1>Leia õppejõu kontaktandmed</h1>
 
             <p>
-                <input
-                    type="text"
-                    name="q"
-                    placeholder="Sisesta nimi või märksõna..."
-                >
+                Otsi õppejõudu nime, õppeaine või märksõnade järgi.
             </p>
 
-            <p>
-                <select name="faculty">
-                    <option value="">Kõik teaduskonnad</option>
-                    <option value="IT">IT</option>
-                    <option value="Majandus">Majandus</option>
-                    <option value="Humanitaarteadused">Humanitaarteadused</option>
-                    <option value="Tehnika">Tehnika</option>
-                </select>
-            </p>
+            <form action="/search" method="GET">
 
-            <button type="submit">Otsi</button>
+                <div class="search-bar">
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10" cy="10" r="7"></circle>
+                        <line x1="15.5" y1="15.5" x2="21" y2="21"></line>
+                    </svg>
+                    <input
+                        type="text"
+                        name="q"
+                        placeholder="Sisesta nimi või märksõna..."
+                        aria-label="Otsi õppejõudu"
+                    >
+                </div>
+                
+                <div>
+                    <p>
+                        <select name="faculty">
+                            <option value="">Kõik teaduskonnad</option>
+                            <option value="IT">IT</option>
+                            <option value="Majandus">Majandus</option>
+                            <option value="Humanitaarteadused">Humanitaarteadused</option>
+                            <option value="Tehnika">Tehnika</option>
+                        </select>
+                    </p>
+                </div>
 
-        </form>
+                <button type="submit">Otsi</button>
+
+            </form>
+        </section>
 
     </main>
 
     <footer>
-        <p>Õppejõudude kontaktide otsingusüsteem</p>
+        <p>&copy; 2026 Kahas. Kõik õigused kaitstud.</p>
     </footer>
 
 </body>
