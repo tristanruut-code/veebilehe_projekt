@@ -5,69 +5,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Otsingutulemused</title>
+    <link rel="stylesheet" href="feature.css">
 </head>
 
 <body>
-
     <header>
-        <h2>Õppejõudude otsing</h2>
+        <div class="container header-inner">
+        <a class="logo" href="index.html">KAHAS</a>
+        <nav>
+            <a href="index.html">Otsing</a>
+            <a href="index2.html">Andmebaas</a>
+            <a href="about_page.html">Meist</a>
+            
+        </nav>
+        </div>
+    </header>
+    <header>
+        <div class="container header-inner">
+            <h1>Otsingutulemused</h1>
+        </div>
     </header>
 
     <main>
 
-        <h1>Otsingutulemused</h1>
+        
+        <div class = "container">
+            <p>
+                Otsing: {{ query if query else "Kõik õppejõud" }}
+            </p>
 
-        <p>
-            Otsing: {{ query if query else "Kõik õppejõud" }}
-        </p>
+            {% if teachers %}
 
-        {% if teachers %}
+                <p>Leiti {{ teachers|length }} õppejõudu.</p>
 
-            <p>Leiti {{ teachers|length }} õppejõudu.</p>
+                {% for teacher in teachers %}
 
-            {% for teacher in teachers %}
+                    <div>
 
-                <div>
+                        <h3>{{ teacher.nimi }}</h3>
 
-                    <h3>{{ teacher.nimi }}</h3>
+                        <p>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:{{ teacher.email }}">
+                                {{ teacher.email }}
+                            </a>
+                        </p>
 
-                    <p>
-                        <strong>E-mail:</strong>
-                        <a href="mailto:{{ teacher.email }}">
-                            {{ teacher.email }}
-                        </a>
-                    </p>
+                        <p>
+                            <strong>Teaduskond:</strong>
+                            {{ teacher.teaduskond }}
+                        </p>
 
-                    <p>
-                        <strong>Teaduskond:</strong>
-                        {{ teacher.teaduskond }}
-                    </p>
+                        <p>
+                            <strong>Õppeaine:</strong>
+                            {{ teacher.aine }}
+                        </p>
 
-                    <p>
-                        <strong>Õppeaine:</strong>
-                        {{ teacher.aine }}
-                    </p>
+                        <p>
+                            <strong>Märksõnad:</strong>
+                            {{ teacher.marksonad }}
+                        </p>
 
-                    <p>
-                        <strong>Märksõnad:</strong>
-                        {{ teacher.marksonad }}
-                    </p>
+                        <hr>
 
-                    <hr>
+                    </div>
 
-                </div>
+                {% endfor %}
 
-            {% endfor %}
+            {% else %}
 
-        {% else %}
+                <p>Sobivaid õppejõude ei leitud.</p>
 
-            <p>Sobivaid õppejõude ei leitud.</p>
+            {% endif %}
 
-        {% endif %}
-
-        <p>
-            <a href="/">Tagasi otsingusse</a>
-        </p>
+            <p>
+                <a href="/">Tagasi otsingusse</a>
+            </p>
+        </div>
 
     </main>
 
