@@ -140,7 +140,8 @@ img {
 
 .section {
   background-color: var(--primary-color);
-  padding-block: 50px;      /* vertical padding only; horizontal comes from .container */
+  padding-block: 50px;
+  
 }
 
 .container3 {
